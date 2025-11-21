@@ -101,6 +101,7 @@
       <p><span class="big">지하철</span>&nbsp;&nbsp;2호선 신촌역 2번 출구 도보 약 10분</p>
       <p><span class="big">버스</span>&nbsp;&nbsp;&nbsp;&nbsp;7016 · 7022 · 7737 → ‘연세대학교’ 하차</p>
       <p><span class="big">자가용</span>&nbsp;&nbsp;동문회관 주차장 이용(2시간 무료)</p>
+      <div id="daumRoughmapContainer1763700027199" class="root_daum_roughmap root_daum_roughmap_landing"></div>
     </section>
     <div class="floral-border-2"></div>
 
@@ -108,9 +109,9 @@
       <h2 class="title-center">저희와의 추억을 보내주세요</h2>
       <p>예식날 저희의 사진을 찍어 보내주세요</p>
       <p>베스트 컷 상위 3명을 뽑아 선물로 보답하겠습니다</p>
-      <p><span class="big">1위</span>&nbsp;&nbsp;&nbsp;폴라로이드 카메라</p>
-      <p><span class="big">2위</span>&nbsp;&nbsp;&nbsp;호두마루 희귀 견과 세트</p>
-      <p><span class="big">3위</span>&nbsp;&nbsp;&nbsp;스타벅스 기프트 카드</p>
+      <p><span class="big">1위</span>&nbsp;&nbsp;&nbsp;쿠팡 20만원 기프트카드</p>
+      <p><span class="big">2위</span>&nbsp;&nbsp;&nbsp;쿠팡 10만원 기프트카드</p>
+      <p><span class="big">3위</span>&nbsp;&nbsp;&nbsp;쿠팡 5만원 기프트카드</p>
       <button type="button" class="upload-button" onclick="openDropbox()">하객 사진 업로드</button>
     </section>
 
@@ -118,8 +119,10 @@
     
     <section class="block info e-transfer">
       <h2 class="title-center">마음 전하실 곳</h2>
-      <p>함께 해주시는 것이 저희의 가장 큰 기쁨이지만</p>
-      <p>멀리서 마음을 전하고 싶으신 분들을 위해 기재했습니다.</p>
+      <p class="title-center">함께 해주시는 것이 저희의 가장 큰 기쁨이지만</p>
+      <p class="title-center">멀리서 마음을 전하고 싶으신 분들을 위해 기재했습니다</p>
+      <p class="title-center">소중한 축하를 보내주셔서 감사드리며</p>
+      <p class="title-center">따뜻한 마음에 깊이 감사드립니다</p>
       
       <div class="e-transfer-group">
         <div class="e-transfer-pane" data-side="groom">
@@ -187,11 +190,20 @@
         </div>
       </div>
     </section>
-    
+
   </div>
 
 
   <script src="script.js"></script>
+  <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+  <script charset="UTF-8">
+    new daum.roughmap.Lander({
+      timestamp: '1763700027199',
+      key: 'cjjtr6xpcx2',
+      mapWidth: '360',
+      mapHeight: '240'
+    }).render();
+  </script>
 </body>
 
 </html>
