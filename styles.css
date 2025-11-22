@@ -45,6 +45,7 @@ body {
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   font-family: "Song Myung", serif;
+  font-size: 16px;
 }
 
 .app {
@@ -112,7 +113,7 @@ header.top-decoration::before {
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 0.9rem;
+  font-size: 1rem;
   letter-spacing: 0.08rem;
   color: rgba(255, 255, 255, 0.85);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
@@ -287,8 +288,77 @@ header.top-decoration::before {
   text-decoration-color: rgba(215, 122, 40, 0.4);
 }
 
+.shuttle-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.shuttle-card {
+  position: relative;
+  background: var(--color-white);
+  border-radius: 14px;
+  border: 1px solid rgba(92, 74, 63, 0.08);
+  padding: 1.3rem 1.2rem 1.1rem;
+  box-shadow: 0 12px 30px -22px rgba(58, 54, 50, 0.45);
+  overflow: hidden;
+  text-align: center;
+}
+
+.shuttle-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(120deg, var(--color-accent), #f08e45);
+  opacity: 0.9;
+}
+
+.shuttle-direction {
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+  color: var(--color-text);
+  margin-top: 0.2rem;
+}
+
+.shuttle-times {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.45rem;
+  justify-content: center;
+}
+
+.time-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
+  background: var(--color-accent-soft);
+  color: var(--color-text);
+  font-weight: 600;
+  letter-spacing: 0.03rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
 .title-center {
   text-align: center;
+}
+
+.map-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.map-wrap .root_daum_roughmap {
+  margin: 0 auto !important;
+  width: 100% !important;
+  max-width: 360px;
 }
 
 .cta {
@@ -420,7 +490,7 @@ header.top-decoration::before {
 
 .gallery-subtitle {
   color: var(--color-muted);
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin-top: -0.3rem;
 }
 
