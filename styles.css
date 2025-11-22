@@ -48,6 +48,25 @@ body {
   font-size: 16px;
 }
 
+.lang-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 9999;
+  border: none;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background: linear-gradient(120deg, var(--color-accent), #f08e45);
+  color: var(--color-white);
+  font-weight: 700;
+  letter-spacing: 0.06rem;
+  box-shadow: 0 14px 30px -20px rgba(58, 54, 50, 0.55);
+  cursor: pointer;
+  opacity: 0.98;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
 .app {
   margin: 0 auto;
   max-width: var(--max-width);
@@ -286,6 +305,41 @@ header.top-decoration::before {
   color: var(--color-text);
   text-decoration: underline;
   text-decoration-color: rgba(215, 122, 40, 0.4);
+}
+
+.direction-block {
+  margin-top: 0.9rem;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(92, 74, 63, 0.08);
+  border-radius: 12px;
+  padding: 1rem 1rem 0.8rem;
+  box-shadow: 0 14px 30px -24px rgba(58, 54, 50, 0.5);
+}
+
+.direction-title {
+  margin-bottom: 0.4rem;
+}
+
+.direction-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding-left: 0;
+}
+
+.direction-item {
+  position: relative;
+  padding-left: 1.1rem;
+  line-height: 1.6;
+}
+
+.direction-item::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
 }
 
 .shuttle-schedule {
