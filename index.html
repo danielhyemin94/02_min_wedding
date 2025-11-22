@@ -80,7 +80,7 @@
       <p>서로를 향한 사랑과 신뢰를 바탕으로 새로운 인생의 여정을 시작하려 합니다. 여러분의 따뜻한 응원과 축복 속에서 더욱 행복한 가정을 이루어가고자 합니다.</p>
       <p>바쁘시겠지만 참석하셔서 저희의 기쁨을 함께 나누어 주시길 부탁드립니다. 여러분과 함께하는 이 순간이 저희에게는 무엇보다 소중한 추억이 될 것입니다.</p>
       <p>감사합니다.</p>
-      <p class="signature">혜민 &amp; 세영 드림</p>
+      <p class="signature">혜민 &amp; 세영 올림</p>
       <div class="floral-border-2 bottom-border"></div>
     </section>
 
@@ -93,7 +93,6 @@
       <h2 class="title-center">예식 안내</h2>
       <p><span class="big">일시</span>&nbsp;&nbsp;&nbsp;2025년 12월 27일 토요일 오후 1시</p>
       <p><span class="big">장소</span>&nbsp;&nbsp;&nbsp;<a class="link" href="https://naver.me/FEUO3qlq" target="_blank" rel="noreferrer noopener">연세대학교 동문회관 (서울 서대문구 연세로 50)</a></p>
-      <p><span class="big">TEL</span>&nbsp;&nbsp;&nbsp;<a class="link" href="tel:0221234760">02-2123-4760</a></p>
     </section>
 
     <section class="block info">
@@ -109,9 +108,9 @@
       <h2 class="title-center">저희와의 추억을 보내주세요</h2>
       <p>예식날 저희의 사진을 찍어 보내주세요</p>
       <p>베스트 컷 상위 3명을 뽑아 선물로 보답하겠습니다</p>
-      <p><span class="big">1위</span>&nbsp;&nbsp;&nbsp;쿠팡 20만원 기프트카드</p>
-      <p><span class="big">2위</span>&nbsp;&nbsp;&nbsp;쿠팡 10만원 기프트카드</p>
-      <p><span class="big">3위</span>&nbsp;&nbsp;&nbsp;쿠팡 5만원 기프트카드</p>
+      <p><span class="big">1위</span>&nbsp;&nbsp;&nbsp;신세계 상품권 20만원권</p>
+      <p><span class="big">2위</span>&nbsp;&nbsp;&nbsp;신세계 상품권 10만원권</p>
+      <p><span class="big">3위</span>&nbsp;&nbsp;&nbsp;신세계 상품권 5만원권</p>
       <button type="button" class="upload-button" onclick="openDropbox()">하객 사진 업로드</button>
     </section>
 
@@ -191,8 +190,27 @@
       </div>
     </section>
 
-  </div>
+    <div class="floral-border-2"></div>
 
+    <section class="block gallery" aria-label="우리 사진 모아보기">
+      <h2 class="title-center">우리의 사진</h2>
+      <p class="title-center gallery-subtitle">인스타그램처럼 한눈에 볼 수 있게 준비했어요</p>
+      <div id="gallery-grid" class="gallery-grid" aria-live="polite"></div>
+    </section>
+  </div>
+  
+  <div class="floral-border-1"></div>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="사진 크게 보기">
+    <button type="button" class="lightbox-close" aria-label="닫기">X</button>
+    <div class="lightbox-inner">
+      <img id="lightbox-image" src="" alt="선택한 사진" />
+    </div>
+    <div class="lightbox-controls">
+      <button type="button" id="prev-btn" class="lightbox-nav">이전 사진</button>
+      <button type="button" id="next-btn" class="lightbox-nav">다음 사진</button>
+    </div>
+  </div>
 
   <script src="script.js"></script>
   <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
