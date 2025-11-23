@@ -1,5 +1,6 @@
 const DROPBOX_LINK = 'https://www.dropbox.com/request/your-custom-link';
 const HERO_VIDEO_SOURCE = 'assets/landing_video.mp4';
+const EVENT_DATETIME = '2025-12-27T13:00:00+09:00';
 const GALLERY_IMAGES = [
   'assets/gallery/gallery-0.JPEG',
   'assets/gallery/gallery-1.JPG',
@@ -503,11 +504,29 @@ function setupLanguageToggle() {
   });
 }
 
+function initCountdown() {
+  const badge = document.getElementById('dday-badge');
+  if (!badge) return;
+
+  const target = new Date(EVENT_DATETIME);
+  const now = new Date();
+  const diff = target - now;
+
+  if (diff <= 0) {
+    badge.textContent = 'D-DAY';
+    return;
+  }
+
+  const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+  badge.textContent = `D-${days}`;
+}
+
 
 window.addEventListener('DOMContentLoaded', () => {
   initHeroVideo();
   initETransfer();
   initGallery();
+  initCountdown();
   setupLanguageToggle();
   applyTranslations();
 });
