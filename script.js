@@ -1,4 +1,4 @@
-const DROPBOX_LINK = 'https://www.dropbox.com/request/your-custom-link';
+const DROPBOX_LINK = 'https://www.dropbox.com/request/JWe4bSYvdJENv8laSe20';
 const HERO_VIDEO_SOURCE = 'assets/landing_video.mp4';
 const EVENT_DATETIME = '2025-12-27T13:00:00+09:00';
 const GALLERY_IMAGES = [
